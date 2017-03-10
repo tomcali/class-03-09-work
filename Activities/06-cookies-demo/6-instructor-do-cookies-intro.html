@@ -32,6 +32,9 @@
     // NOTE: In order to modify cookies, we must access them over a secure connection e.i = https, localhost:
     // Needed to create this function to readCookies. Essentially it splits up the cookie list
     // See the working app at http://cookie-example-rcb.herokuapp.com/ or by opening with Firefox or Safari
+    // read cookie splitting on the semicolon
+    // a way of parsing cookie to get value associated with a key
+    // without actually having a key-value pair
     function readCookie(name) {
       var nameEQ = name + "=";
       var ca = document.cookie.split(";");

@@ -53,6 +53,7 @@
       localStorage.clear();
 
       // Store the username into localStorage using "localStorage.setItem"
+      // setItem to set the value... store the value on click
       localStorage.setItem("name", username);
 
       // And display that name for the user using "localStorage.getItem"
@@ -61,6 +62,8 @@
     });
 
     // By default (upon load) show the name stored in localStorage using "localStorage.getItem"
+    // not just on click... but always displays even after closing
+    console.log('name:', localStorage.getItem("name"));
     $("#greeting").html(localStorage.getItem("name"));
 
     </script>
